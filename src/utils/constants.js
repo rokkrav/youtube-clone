@@ -1,5 +1,7 @@
-const GOOGLE_API_KEY = "AIzaSyBQkje7knXVPjnu30fQg1yesIFnkPGd-FM";
-
 export const YOUTUBE_VIDS_API =
-  "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&key=" +
-  GOOGLE_API_KEY;
+  "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=" +
+  process.env.REACT_APP_GOOGLE_API_KEY;
+
+export const YOUTUBE_SUGGESTIONS_API =
+  "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+// https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=[YOUR_API_KEY]

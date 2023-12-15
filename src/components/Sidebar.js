@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="p-5 w-48 shadow-lg  ">
       <ul className="font-bold mb-4">
-        <li>Home</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
         <li>Shorts</li>
         <li>Subscriptions</li>
         <li>Youtube Music</li>

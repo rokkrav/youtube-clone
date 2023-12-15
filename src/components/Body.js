@@ -1,7 +1,8 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import MainContainer from "./MainContainer";
+
 import { useSelector } from "react-redux";
+import { Outlet } from "react-router-dom";
 
 const Body = () => {
   const sidebarToggle = useSelector((store) => store.app.isMenuOpen);
@@ -16,7 +17,7 @@ const Body = () => {
           <h1>🎼</h1>
         </div>
       )}
-      <MainContainer />
+      <Outlet />
     </div>
   );
 };
